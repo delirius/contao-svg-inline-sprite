@@ -1,0 +1,17 @@
+#ctrl_svg_symbol_id.tl_radio_container {
+	display: flex;
+    flex-wrap: wrap;
+}
+#ctrl_svg_symbol_id.tl_radio_container>legend {
+	margin-bottom:1rem;
+}
+#ctrl_svg_symbol_id.tl_radio_container>span {
+	margin-right:1.75rem;
+	margin-bottom:1rem;
+}
+#ctrl_svg_symbol_id.tl_radio_container label {
+	border: 1px solid var(--form-button);
+}
+#ctrl_svg_symbol_id.tl_radio_container input:checked ~ label {
+	border: 1px solid var(--form-button-active);
+}

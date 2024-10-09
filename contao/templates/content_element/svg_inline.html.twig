@@ -1,0 +1,26 @@
+<div{{ wrapper_attributes }}>
+{% if not href|default %}
+    {% block media %}
+       {% if use_symbol|default %}
+        <svg{{ svg_attributes }}><use href="{% if as_editor_view %}{{ svg_path }}{% endif %}{{ svg_symbol_id }}"></use></svg>
+    {% else %}
+        {{ svg_inline|raw }}
+  {% endif %}
+{% endblock %}
+{% else %}
+    {# media with link #}
+    {% block media_link %}
+        <a{{ link_attributes }}>{{ block('media') }}</a>
+    {% endblock %}
+{% endif %}
+</div>
+
+{% if svg_symbol_inline|default %}
+    {% add to body %}
+    {% apply spaceless %}
+        <div aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        {{ svg_symbol_inline|raw }}
+        </div>
+    {% endapply %}
+    {% endadd %}
+{% endif %}
