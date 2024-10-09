@@ -1,11 +1,14 @@
 {
     "name": "delirius/contao-svg-inline-sprite",
-    "description": "Beschreibung",
+    "description": "Das Inhaltselement ermöglicht die Ausgabe von Inline-SVG und SVG Sprite (Symbol). Dabei wird das SVG direkt in das HTML-Markup geschrieben und kann mit CSS angepasst werden.",
     "keywords": [
         "contao",
-        "bundle",
-        "tag 3",
-        "tag 4"
+        "svg",
+        "inline",
+        "symbol",
+        "html-markup",
+        "css",
+        "sprite"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",
