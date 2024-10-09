@@ -3,7 +3,7 @@
 Das Inhaltselement ermöglicht die Ausgabe von Inline-SVG und SVG Sprite (Symbol). Dabei wird das SVG direkt in das HTML-Markup geschrieben und kann mit CSS angepasst werden.
 
 ## Contao
-Contao: ^5.3<br>
+Contao: ^5.0<br>
 PHP:  ^8.1<br>
 
 ## Screenshot
